@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="{{ url_for('static', filename='js/game.js') }}" defer></script>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+    <body>
+        <div class="title">
+            <h1>Memory game <img id="brain" src="static/images/brain.png"></h1>
+        </div>
+        
+        <div id="game" class="game" data-x={{x}} data-y={{y}}>
+            <div id="game-board" class="game-board"></div>
+        </div>
+        <form action="/">
+            <button id='quit' type="submit">Quit</button>
+        </form>
+    </body>
+</html>

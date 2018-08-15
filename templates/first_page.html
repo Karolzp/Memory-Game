@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="{{ url_for('static', filename='js/first_page.js') }}" defer></script>
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Memory game</title>
+</head>
+    <body>
+        <div class="title">
+            <h1>Memory game <img id="brain" src="static/images/brain.png"></h1>
+        </div>
+        <form id = "choose" ,action="/", method='POST'>
+            <label for="x">X of board size</label>
+            <select id="x" name="x" >
+                <option value="" selected hidden>please select a number</option>
+                <option value=1 >1</option>
+                <option value=2 >2</option>
+                <option value=3 >3</option>
+                <option value=4 >4</option>
+                <option value=5 >5</option>
+                <option value=6 >6</option>
+                <option value=7 >7</option>
+                <option value=8 >8</option>
+            </select>
+            <br>
+            <label for="y">Y of board size</label>
+            <select id="y" name="y" >
+                <option value="" selected hidden>please select a number</option>
+                <option value=2 >2</option>
+                <option value=4 >4</option>
+                <option value=6 >6</option>
+                <option value=8 >8</option>
+            </select>
+            <br>
+            <p><button id='play' onclick="check()" type="submit" value="Submit">Start game</button></p>
+        </form>
+
+    </body>
+</html>
