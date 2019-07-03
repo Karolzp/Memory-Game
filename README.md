@@ -5,7 +5,7 @@ Memory Game is a card game in which all cards are placed face down, and two card
 
 ## About project:
 The project was created during my education in Codecool.<br/>
-The goal was to:
+**The goal was to:**
 * create possibility to choose board size 
 * use Flask to create a simple web server
 * practice front-end skills: 
