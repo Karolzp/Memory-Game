@@ -1,5 +1,6 @@
 # MEMORY GAME
 
+## About App:
 A memory game is a card game in which all cards are placed face down, and two cards are turned upside down each turn. The object of the game is to reverse the pair of matching cards.
 
 ## About project:
